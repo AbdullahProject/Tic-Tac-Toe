@@ -34,7 +34,7 @@ const enableBoxes = () => {
   });
 };
 const showWinner = (winner) => {
-  msg.innerText = `Congratulations, Winner is ${winner}`;
+  msg.innerText = `Well done, ${winner}! You’re the winner!`;
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
