@@ -3,6 +3,44 @@ let reSet = document.querySelector("#resetButton");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let but = document.querySelector("#mode");
+let Mode = "#FFFFFF";
+
+const changeMode = () => {
+  if (Mode === "#FFFFFF") {
+    document.body.style.backgroundColor = "#0aadad";
+    Mode = "#0aadad"; 
+    document.querySelector("#msg").style.color="#FFFFFF";
+  } 
+  else if (Mode === "#0aadad") {
+    document.body.style.backgroundColor = "#228B22";
+    document.querySelector("#msg").style.color="#F5F5DC";
+    Mode = "#228B22"; 
+  } 
+  else if (Mode === "#228B22") {
+    document.body.style.backgroundColor = "#708090";
+    document.querySelector("#msg").style.color="#ADD8E6";
+    Mode = "#708090"; 
+  } 
+  else if (Mode === "#708090") { 
+    document.body.style.backgroundColor = "#DC143C";
+    document.querySelector("#msg").style.color="#FFD700";
+    Mode = "#DC143C"; 
+  } 
+  else if (Mode === "#DC143C") { 
+    document.body.style.backgroundColor = "#87CEEB";
+    document.querySelector("#msg").style.color="#00008B";
+    Mode = "#87CEEB";
+  } 
+  else {
+    document.body.style.backgroundColor = "#FFFFFF";
+    Mode= "#FFFFFF"
+    document.querySelector("#msg").style.color="#c4330e";
+  }
+};
+
+but.addEventListener("click", changeMode);
+
 
 let turn0 = true;
 const winPatterns=[
