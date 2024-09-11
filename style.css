@@ -81,3 +81,13 @@ body {
   color: #fff;
   font-size: 15px;
 }
+.footer{
+  background-color: #191913;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.Ftext{
+  color: #fff;
+  text-decoration: none;
+}
